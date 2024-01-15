@@ -41,7 +41,11 @@ public class MemoryMemberRepositoryTest {
         repository.save(member2);
 
         Member result = repository.findByName("spring1").get(); // spring1인 객체를 찾아봐
+<<<<<<< HEAD
         assertThat(result).isEqualTo(member1); //객체 가져와서 비교
+=======
+        assertThat(result).isEqualTo(member1); //assert  = 객체 가져와서 비교
+>>>>>>> 45c9d1b (2024 1 16)
     }
 
     @Test
